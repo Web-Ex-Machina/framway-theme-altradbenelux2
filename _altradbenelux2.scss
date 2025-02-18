@@ -42,6 +42,27 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+// SLIDER
+.sliderFW{
+  &.coverflow{
+    .sliderFW__container{overflow: visible;}
+    .sliderFW__rail{ transform-style: preserve-3d; gap: 2em}
+    .sliderFW__item{
+      scale: 0.9;
+      opacity: 0.8;
+      // rotate: y 50deg;
+      translate: 0 0 -100px;
+      // transform-origin: 100% 50%;
+    }
+    .sliderFW__item.active+.sliderFW__item{
+      // transform-origin: 0% 50%;
+      // rotate: y -50deg;
+      // translate: 0 0 100px;
+    }
+    .sliderFW__item.active{scale: 1.15; translate: 0; rotate: 0deg; opacity: 1;}
+  }
+}
+
 
 .modalFW{
   &[data-name=jobDetailsModal]{
