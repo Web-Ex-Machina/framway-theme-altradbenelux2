@@ -20,4 +20,8 @@ $(function(){
 
 });
 
-document.querySelector('#footer').classList.add('v2')
+document.querySelector('#footer').classList.add('v2');
+
+document.querySelectorAll('.heroFW__title').forEach((el)=>{
+	el.innerHTML = el.innerText.replace(/\s(\w+)$/,'&nbsp;$1');
+})
