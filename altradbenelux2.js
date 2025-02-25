@@ -1,3 +1,11 @@
+document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+app.labels.errors.inputs.empty.nl     = 'Vul het veld "%s" in';
+app.labels.errors.inputs.incorrect.nl = 'De waarde die is ingevoerd in het veld "%s" is onjuist';
+app.labels.buttons.next.nl            = 'Volgende';
+app.labels.buttons.prev.nl            = 'Vorige';
+app.labels.buttons.send.nl            = 'Versturen';
+app.labels.miscs.seeMore.nl           = 'Meer informatie';
+
 $(function(){
 	// slider/carousel management
 	$('.sliderFW.coverflow').each(function(index,item){
