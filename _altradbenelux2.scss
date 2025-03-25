@@ -45,6 +45,59 @@ h1, h2, h3, h4, h5, h6,
   &.bnl{ @extend .height--content; min-height: 30vh;
     @include media-max(xs){height: auto !important;}
   }
+
+  &.hero--asb--1{
+    .heroFW__content{
+      padding: 0;
+      align-items: end;
+      justify-content: flex-end;
+      &:after{opacity: 1; background-color: transparent; 
+      }
+    }
+    .heroFW__content__wrapper{padding: 2em 3em 1.5em; width: 100%; text-align: right;
+      background: url('/../../../files/media/images/heading_right.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top right;
+    }
+    .heroFW__title{margin: 0;width: fit-content; padding: 5px 15px; margin-left: auto;background: $primary;}
+  }
+  &.hero--asb--2{
+    .heroFW__content{
+      padding: 0;
+      align-items: end;
+      justify-content: center;
+      &:after{opacity: 1; background-color: transparent; 
+      }
+    }
+    .heroFW__content__wrapper{padding: 3em 3em 1.5em; width: 100%; text-align: center;
+      background: url('/../../../files/media/images/heading_full.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+    .heroFW__title{margin: 0; width: fit-content; margin: auto; padding: 5px 15px; background: $primary;}
+  }
+  &.hero--asb--3{
+    .heroFW__figure{position: relative;z-index: -1;}
+    .heroFW__content{
+      padding: 0;
+      align-items: end;
+      justify-content: center;
+      &:after{opacity: 1; background-color: transparent; 
+      }
+    }
+    .heroFW__wrapper{
+      background: url('/../../../files/media/images/heading_full_white_v3.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom right;
+    }
+    .heroFW__content__wrapper{padding: 3em 3em 1.5em; width: 100%; text-align: center;
+      
+    }
+    .heroFW__title{background: rgba(255, 255, 255, 0.5); background: transparent; margin: 0 30vw 0 auto; padding: 5px 15px; width: fit-content; color: var(--primary) !important;}
+  }
 }
 
 // SLIDER
