@@ -5,6 +5,11 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
 }
 
+.quote{
+  &:before,&:after{font-family: sans-serif; vertical-align: sub; font-size: 1.5em; line-height: 0;}
+  &:before{content: "\201D\00a0"; }
+  &:after{content: "\00a0\201C"; }
+}
 
 .drpshdw{filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.65));}
 
