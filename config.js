@@ -1,4 +1,7 @@
 module.exports = {
+	'colors':{
+		'tangerine' : '#ec7823',
+	},
 	'radius': '50px',
 	'input': {
 		'font-color': 'colors(greystronger)',
